@@ -1,12 +1,22 @@
-const ctx = document.getElementById('myChart').getContext('2d');
-new Chart(ctx, {
-  type: 'bar',
-  data: {
-    labels: ['Styczeń', 'Luty', 'Marzec', 'Kwiecień'],
-    datasets: [{
-      label: 'Przykładowe dane',
-      data: [12, 19, 3, 5],
-      backgroundColor: 'rgba(75, 192, 192, 0.6)',
-    }]
-  }
-});
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+canvas {
+  border: 2px solid #ddd;
+  margin-top: 20px;
+}
+
+.nav-pills .nav-link {
+  color: #007bff;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #007bff;
+}
