@@ -1,18 +1,12 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f7f7f7;
-}
-
-.container {
-  width: 80%;
-  margin: 40px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-h1 {
-  text-align: center;
-}
+const ctx = document.getElementById('myChart').getContext('2d');
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Styczeń', 'Luty', 'Marzec', 'Kwiecień'],
+        datasets: [{
+            label: 'Przykładowe dane',
+            data: [12, 19, 3, 5],
+            backgroundColor: 'rgba(75, 192, 192, 0.6)',
+        }]
+    }
+});
