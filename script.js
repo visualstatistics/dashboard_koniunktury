@@ -17,9 +17,9 @@ const barCtx = document.getElementById('barChart').getContext('2d');
 const barChart = new Chart(barCtx, {
   type: 'bar',
   data: {
-    labels: ['Styczeń', 'Luty', 'Marzec'],
+    labels: ['I 2023', 'II 2023', 'I 2024'],
     datasets: [{
-      label: 'Sprzedaż',
+      label: 'Wskaźnik...',
       data: [12, 19, 3],
       backgroundColor: 'rgba(75, 192, 192, 0.6)'
     }]
